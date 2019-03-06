@@ -9,16 +9,20 @@ const links = [
   return link
 })
 
-const Nav = () => (
+const Nav = ({thispage, pages}) => (
+    {pages = pages.map(link => { // it's okay to be in the render because it only renders once?
+    link.key = `nav-link-${link.href}-${link.label}`
+    return link
+    })}
   <nav>
     <ul>
       <li>
         <Link prefetch href="/">
-          <a>Home</a>
+          <a>{thispage.label}</a>
         </Link>
       </li>
       <ul>
-        {links.map(({ key, href, label }) => (
+        {pages.map(({ key, href, label }) => (
           <li key={key}>
             <Link prefetch href={href}>
               <a>{label}</a>
