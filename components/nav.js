@@ -9,15 +9,12 @@ const links = [
   return link
 })
 
-const Nav = ({thispage, pages}) => (
-    {pages = pages.map(link => { // it's okay to be in the render because it only renders once?
-    link.key = `nav-link-${link.href}-${link.label}`
-    return link
-    })}
-  <nav>
+const Nav = ({thispage, pages}) => {
+ return <nav>
+   {console.log(thispage)}
     <ul>
       <li>
-        <Link prefetch href="/">
+        <Link prefetch href={thispage.href}>
           <a>{thispage.label}</a>
         </Link>
       </li>
@@ -59,6 +56,6 @@ const Nav = ({thispage, pages}) => (
       }
     `}</style>
   </nav>
-)
+}
 
 export default Nav

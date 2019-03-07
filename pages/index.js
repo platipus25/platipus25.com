@@ -5,8 +5,7 @@ import Nav from '../components/nav'
 
 const Home = () => (
   <div>
-    <Head title="Home" />
-    <Nav />
+    <HeadNav title=""/>
 
     <div className="hero">
       <h1 className="title">Welcome to my website!</h1>
