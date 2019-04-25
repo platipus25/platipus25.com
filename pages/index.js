@@ -2,12 +2,14 @@ import React from 'react'
 import Link from 'next/link'
 import Head from '../components/head'
 import Nav from '../components/nav'
+import HeadNav from '../components/headnav'
 
 const Home = () => (
   <div>
-    <HeadNav title=""/>
+    <Head title=""/>
+    <Nav/>
 
-    <div className="hero">
+    <div className="body">
       <h1 className="title">Welcome to my website!</h1>
       <p className="description">
         To get started, edit <code>pages/index.js</code> and save to reload.
@@ -20,6 +22,7 @@ const Home = () => (
         color: #333;
       }
       .title {
+        font-family: serif, "Times";
         margin: 0;
         width: 100%;
         padding-top: 80px;
