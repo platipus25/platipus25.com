@@ -3,23 +3,19 @@ import Link from 'next/link'
 
 const links = [
   { href: 'https://github.com/segmentio/create-next-app', label: 'Github' },
-  { href: '/create', label: 'Create'}
+  { href: '/create', label: 'Create'},
+  { href: '/whatsnext', label: 'Whatsnext'}
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`
   return link
 })
 
-const Nav = ({thispage, pages}) => {
+const Nav = () => {
  return <nav>
-   {console.log(thispage)}
+   {console.log()}
     <ul>
-      <li>
-        <Link prefetch href={thispage.href}>
-          <a>{thispage.label}</a>
-        </Link>
-      </li>
       <ul>
-        {pages.map(({ key, href, label }) => (
+        {links.map(({ key, href, label }) => (
           <li key={key}>
             <Link prefetch href={href}>
               <a>{label}</a>
@@ -30,12 +26,14 @@ const Nav = ({thispage, pages}) => {
     </ul>
 
     <style jsx>{`
-      :global(body) {
+      /*:global(body) {
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
           Helvetica, sans-serif;
-      }
+      }*/
       nav {
+        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
+          Helvetica, sans-serif;
         text-align: center;
       }
       ul {
