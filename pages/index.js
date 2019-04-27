@@ -6,7 +6,7 @@ import HeadNav from '../components/headnav'
 
 const Home = () => (
   <div>
-    <Head title=""/>
+    <Head title="Ravago Jones"/>
     <Nav/>
 
     <div className="body">
