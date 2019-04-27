@@ -2,7 +2,8 @@ import React from 'react'
 import NextHead from 'next/head'
 import { string } from 'prop-types'
 import Link from 'next/link'
-
+import Head from "./head"
+import Nav from "./nav"
 
 const pages = [
   { href: 'https://github.com/segmentio/create-next-app', label: 'Github' },
@@ -13,7 +14,7 @@ link.key = `nav-link-${link.href}-${link.label}`
 return link
 })
 
-const HeadNav = class {
+class HeadNav {
     init(){
         for(page of pages) {
             if(this.props.title === page.title){
@@ -29,3 +30,5 @@ const HeadNav = class {
         </React.Fragment>
     }
 }
+
+export default HeadNav
