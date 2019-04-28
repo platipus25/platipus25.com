@@ -15,9 +15,9 @@ export default () => (
                         <h3>API Documentation</h3>
                     </div>
                 </Link>
-                <Link prefetch href="/whatsnext/why">
-                    <div className="card">
-                        <h3>Why?</h3>
+                <Link prefetch href="http://whatsnext.cdn.platipus25.com">
+                    <div className="card" onClick={() => window.location.assign("http://whatsnext.cdn.platipus25.com")}>
+                        <h3>Download</h3>
                     </div>
                 </Link>
             </div>
@@ -57,18 +57,21 @@ export default () => (
 
             .content{
                 padding: 3em;
+                margin: 0
             }
 
             .row {
-                max-width: 880px;
-                /*margin: 80px auto 40px;*/
+                max-width: 600px;
+                margin: 0 auto;
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap-reverse;
                 justify-content: space-around;
             }
             .card {
                 padding: 18px 18px 24px;
                 width: 220px;
+                min-width: 200px;
                 text-align: center;
                 text-decoration: none;
                 color: #434343;
@@ -91,6 +94,12 @@ export default () => (
                 font-size: 13px;
                 color: #333;
             }
+
+            @media only screen and (max-width: 400px) {
+                body {
+                  background-color: lightblue;
+                }
+              }
             
         `}</style>
     </div>
