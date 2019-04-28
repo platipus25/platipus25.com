@@ -7,7 +7,7 @@ export default () => (
         <h1 className="title">Example Usage</h1>
         <div className="content">
             <p>
-                The web bundle esposes <code>whatsnext</code> using umd, while the node bundle uses commonjs2, so you can import using <code>require()</code>.
+                The web bundle esposes <code>window.whatsnext</code> using umd. The node bundle uses commonjs2, so you can import using <code>require()</code>.
             </p>
         </div>
         <iframe height="100%" width="100%" src="/static/whatsnext/index.html"></iframe>
