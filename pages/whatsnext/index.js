@@ -15,8 +15,8 @@ export default () => (
                         <h3>API Documentation</h3>
                     </div>
                 </Link>
-                <Link prefetch href="http://whatsnext.cdn.platipus25.com">
-                    <div className="card" onClick={() => window.location.assign("http://whatsnext.cdn.platipus25.com")}>
+                <Link prefetch href="/whatsnext/download">
+                    <div className="card">
                         <h3>Download</h3>
                     </div>
                 </Link>
