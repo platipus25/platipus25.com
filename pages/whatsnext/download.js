@@ -55,7 +55,7 @@ export default () => (
 
             .content{
                 padding: 3em 0;
-                margin: 0
+                margin: 0;
             }
 
             .row {
@@ -70,7 +70,7 @@ export default () => (
                 margin: 0.5em auto;
                 padding: 18px 0;
                 width: 100%;
-                min-width: 540px;
+                min-width: fit-content;
                 text-align: center;
                 text-decoration: none;
                 color: #434343;
@@ -94,13 +94,26 @@ export default () => (
             
             code{
                 display:inline-block;
-                padding: 0.2em 0.5em;
+                padding: 0.2em 0.5em 0;
                 margin: 0.2em 0;
                 background-color: #aaaaaa33;
                 border-radius: 0.2em;
                 max-width: 95%;
-                overflow:hidden;
+                overflow:auto;
+                white-space: nowrap;
+                min-width: fit-content;
             }
+
+            a{
+                text-decoration: none;
+            }
+
+            /*@media only screen and (max-width: 600px) {
+                body {
+                  background-color: lightblue;
+                }
+            }*/
+
         `}</style>
     </div>
 
