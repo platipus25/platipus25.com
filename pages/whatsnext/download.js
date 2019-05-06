@@ -9,32 +9,27 @@ export default () => (
         <h3 className="title subtitle">Web or Node.js</h3>
 
         <div className="content">
-            <h3>Web</h3>
+            <a href="http://whatsnext.cdn.platipus25.com/whatsnext.web.js" download>
+                <div className="card">
+                    <h3>Web</h3>
+                </div>
+            </a>
             <p>
-                Include using <br/> 
-                <code>&lt;script src="./whatsnext.node.js">&lt;script></code><br/>
-                or <br/>
-                <code>&lt;script src="https://whatsnext.cdn.platipus25.com/whatsnext.node.js">&lt;script></code> <br/>
-                Exposes a <code>window.whatsnext</code>
+                Include using 
+                <code>&lt;script src="./whatsnext.web.js"&gt;&lt;/script&gt;</code>
+                <br/>
+                Accessible with <code>window.whatsnext</code>
             </p>
-            <h3>Node.js</h3>
-            <p>Accesable via <code>require("./whatsnext.node.js")</code></p>
-            <div className="row">
-                <a href="http://whatsnext.cdn.platipus25.com/whatsnext.web.js" download>
-                    <div className="card">
-                        <h3>Web</h3>
-                    </div>
-                </a>
-                <a href="http://whatsnext.cdn.platipus25.com/whatsnext.node.js" download>
-                    <div className="card">
-                        <h3>Node.js</h3>
-                    </div>
-                </a>
-            </div>
+            <a href="http://whatsnext.cdn.platipus25.com/whatsnext.node.js" download>
+                <div className="card">
+                    <h3>Node.js</h3>
+                </div>
+            </a>
+            <p>Accessible via <code>require("./whatsnext.node.js")</code></p>
         </div>
         <style jsx>{`
             .body{
-                margin: 1em;
+                margin: 0 1em;
                 font-family: sans-serif;
             }
 
@@ -54,20 +49,21 @@ export default () => (
             }
 
             .content{
-                padding: 3em 0;
+                /*padding-top: 3em;*/
                 margin: 0;
             }
 
-            .row {
+            /*.row {
                 margin: 0 auto;
                 display: flex;
-                width:100%;
+                width: 100%;
                 flex-direction: column;
-                /*flex-wrap: wrap;*/
                 justify-content: space-around;
-            }
+            }*/
+
             .card {
                 margin: 0.5em auto;
+                margin-top: 6vh;
                 padding: 18px 0;
                 width: 100%;
                 min-width: fit-content;
@@ -93,15 +89,11 @@ export default () => (
             }
             
             code{
-                display:inline-block;
-                padding: 0.2em 0.5em 0;
+                padding: 0 0.5em;
                 margin: 0.2em 0;
                 background-color: #aaaaaa33;
                 border-radius: 0.2em;
-                max-width: 95%;
-                overflow:auto;
-                white-space: nowrap;
-                min-width: fit-content;
+                word-break: break-word;
             }
 
             a{
@@ -113,6 +105,15 @@ export default () => (
                   background-color: lightblue;
                 }
             }*/
+
+            @media (max-height: 600px) {            
+                .card {
+                    margin-top: 4vh;
+                }
+                h1.title {
+                    padding-top: 2vh;
+                }
+            }
 
         `}</style>
     </div>
