@@ -7,7 +7,7 @@ export default () => (
         <h1 className="title">Example Usage</h1>
         <div className="content">
             <p>
-                The web bundle esposes <code>window.whatsnext</code> using umd. The node bundle uses commonjs2, so you can import using <code>require()</code>.
+                An example:
             </p>
         </div>
         <iframe height="100%" width="100%" src="/static/whatsnext/index.html"></iframe>
@@ -16,6 +16,7 @@ export default () => (
                 margin: 1em;
                 font-family: sans-serif;
                 height:50vh;
+                font-size: 1.2em;
             }
 
             .title{
@@ -29,11 +30,7 @@ export default () => (
             }
 
             .content{
-                padding: 3em;
-            }
-
-            .content p{
-                font-size: 1.5em;
+                padding: 1em;
             }
 
             iframe{
