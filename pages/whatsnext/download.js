@@ -15,17 +15,16 @@ export default () => (
                 </div>
             </a>
             <p>
-                Include using 
-                <code>&lt;script src="./whatsnext.web.js"&gt;&lt;/script&gt;</code>
-                <br/>
-                Accessible with <code>window.whatsnext</code>
+                Include using <code>&lt;script src="./whatsnext.web.js"&gt;&lt;/script&gt;</code>. Accessible with <code>window.whatsnext</code>
             </p>
             <a href="http://whatsnext.cdn.platipus25.com/whatsnext.node.js" download>
                 <div className="card">
                     <h3>Node.js</h3>
                 </div>
             </a>
-            <p>Accessible via <code>require("./whatsnext.node.js")</code></p>
+            <p>
+                Accessible via <code>require("./whatsnext.node.js")</code>.
+            </p>
         </div>
         <style jsx>{`
             .body{
@@ -98,6 +97,11 @@ export default () => (
 
             a{
                 text-decoration: none;
+            }
+
+            p{
+                width:fit-content;
+                margin:auto
             }
 
             /*@media only screen and (max-width: 600px) {
