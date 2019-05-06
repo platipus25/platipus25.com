@@ -36,7 +36,7 @@ export default () => (
         </div>
         <style jsx>{`
             .body{
-                margin: 1em;
+                margin: 0 1em;
                 font-family: sans-serif;
             }
 
@@ -56,8 +56,8 @@ export default () => (
             }
 
             .content{
-                padding: 3em;
-                margin: 0
+                padding: 0 3em;
+                margin-top: 4vh;
             }
 
             .row {
