@@ -36,7 +36,7 @@ export default () => (
         </div>
         <style jsx>{`
             .body{
-                margin: 1em;
+                margin: 0 1em;
                 font-family: sans-serif;
             }
 
@@ -56,8 +56,8 @@ export default () => (
             }
 
             .content{
-                padding: 3em;
-                margin: 0
+                /*padding: 0 3em;*/
+                margin-top: 6vh;
             }
 
             .row {
@@ -95,11 +95,20 @@ export default () => (
                 color: #333;
             }
 
-            @media only screen and (max-width: 400px) {
-                body {
-                  background-color: lightblue;
+            @media (max-height: 600px) {            
+                .content {
+                    margin-top: 2vh;
                 }
-              }
+                h1.title {
+                    padding-top: 2vh;
+                }
+            }
+
+            @media (min-width: 550px) {            
+                .row{
+                    flex-wrap:nowrap;
+                }
+            }
             
         `}</style>
     </div>
