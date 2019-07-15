@@ -12,7 +12,7 @@ const Home = () => (
     <div className="body">
       <h1 className="title">Welcome to my website!</h1>
       <p className="description">
-        I do Javascript, Typescript, CSS, some Python, Swift, and Java. I'm also learning C++ and Lisp.
+        I do Javascript, Typescript, CSS, some Python, Swift, Java, and Unity. I'm also learning C++ and Lisp.
       </p>
     </div>
 
