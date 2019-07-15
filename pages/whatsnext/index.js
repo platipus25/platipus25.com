@@ -27,7 +27,7 @@ export default () => (
                         <h3>View the source code on GitHub</h3>
                     </div>
                 </Link>
-                <Link prefetch href="/whatsnext/examples">
+                <Link prefetch href="/static/school-schedule-whatsnext/index.html">
                     <div className="card">
                         <h3>Examples</h3>
                     </div>
